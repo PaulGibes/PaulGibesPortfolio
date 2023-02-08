@@ -1,0 +1,59 @@
+html {
+  scroll-behavior: smooth;
+  font-size: calc(14px + (18 - 11) * ((100vw - 320px) / (1936 - 320)));
+}
+
+:root {
+  --backgroundColor: rgb(35, 147, 147);
+}
+
+div {
+  display: flex;
+  flex-direction: row;
+}
+
+nav {
+  min-width: 20vw;
+  border: 5px solid black;
+  background-color: var(--backgroundColor);
+  padding: 0 5% 0 10%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  align-items: end;
+  background-color: var(--backgroundColor);
+  border-bottom: 2px solid black;
+  min-height: 70px;
+}
+
+header h1 {
+  font-weight: 700;
+}
+
+ul {
+  display: flex;
+  gap: 10px;
+}
+
+main {
+  background-color: var(--backgroundColor);
+  padding-top: 90px;
+  flex-grow: 1;
+}
+
+section {
+  min-height: 1000px;
+}
+
+footer {
+  background-color: var(--backgroundColor);
+  min-height: 50px;
+}
