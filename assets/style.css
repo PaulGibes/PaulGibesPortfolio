@@ -1,10 +1,16 @@
+:root {
+  --backgroundColor: #0093e9;
+  --textColor: black;
+}
+
 html {
   scroll-behavior: smooth;
   font-size: calc(14px + (18 - 11) * ((100vw - 320px) / (1936 - 320)));
-}
-
-:root {
-  --backgroundColor: rgb(35, 147, 147);
+  color: var(--textColor);
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 div {
@@ -14,8 +20,8 @@ div {
 
 nav {
   min-width: 20vw;
-  border: 5px solid black;
-  background-color: var(--backgroundColor);
+  border-left: 0.75vw solid black;
+  border-right: 0.75vw solid black;
   padding: 0 5% 0 10%;
 }
 
@@ -28,10 +34,13 @@ body {
 header {
   position: fixed;
   display: flex;
-  align-items: end;
-  background-color: var(--backgroundColor);
+  align-items: center;
+  justify-content: space-between;
+  width: 88.5%;
   border-bottom: 2px solid black;
-  min-height: 70px;
+  min-height: 100px;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
 }
 
 header h1 {
@@ -40,20 +49,100 @@ header h1 {
 
 ul {
   display: flex;
-  gap: 10px;
+  gap: 2rem;
+  padding-right: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 main {
-  background-color: var(--backgroundColor);
-  padding-top: 90px;
-  flex-grow: 1;
+  padding-top: 120px;
+}
+
+main::after {
+  padding-top: 50px;
+}
+
+#intro {
+  display: flex;
+  font-size: calc(32px + (180 - 32) * ((100vw - 320px) / (1936 - 320)));
+}
+
+#intro p {
+  flex-direction: column;
+}
+
+#intro img {
+  width: 40%;
+  height: 40%;
+}
+
+#theOnly {
+  padding-top: 20%;
+  padding-left: 10%;
 }
 
 section {
-  min-height: 1000px;
+  display: flex;
+  min-height: 350px;
+  padding: 5rem 8rem 0 6rem;
+}
+
+section p {
+  padding: 0 1rem 0 1rem;
+}
+
+#about-me h2,
+#contact h2 {
+  padding-right: 1rem;
+  border-right: 3px solid black;
+}
+
+#projects h2 {
+  padding-left: 1rem;
+  border-left: 3px solid black;
+}
+
+h2 {
+  font-size: calc(24px + (150 - 32) * ((100vw - 320px) / (1936 - 320)));
+}
+
+#projects div {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.projectImg {
+  max-height: 75%;
+  max-width: 75%;
+  padding: 10px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+h3 {
+  font-size: calc(10px + (75 - 32) * ((100vw - 320px) / (1936 - 320)));
+  padding-bottom: 2rem;
+}
+
+form div {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0 0.5rem 0;
 }
 
 footer {
-  background-color: var(--backgroundColor);
+  padding-top: 3rem;
+  text-align: center;
   min-height: 50px;
 }
