@@ -2,4 +2,4 @@
 
 https://paulgibes.github.io/paulgibesporfolio
 
-![website screenshot](./assets/images/portfolioScreenshot.png)
+![website screenshot](./assets/images/portfolioScreenshot.PNG)
